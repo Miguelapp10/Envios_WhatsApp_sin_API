@@ -1,9 +1,11 @@
+## Envios de mensaje masivos por WhatApp sin API.
+
 Este script es una excelente herramienta para automatizar el proceso de enviar mensajes personalizados a múltiples destinatarios a través de WhatsApp.
 Su capacidad para leer datos de un archivo de Excel y formatear mensajes de manera dinámica ahorra tiempo y esfuerzo. 
 Además, la inclusión de un retraso entre los mensajes garantiza un envío suave y sin problemas. 
 ¡Es una solución eficiente y práctica para comunicarse con varios contactos de manera efectiva!
 
-Importaciones: Se importan las bibliotecas necesarias. Estas incluyen pandas para la manipulación de datos, pywhatkit para enviar mensajes de WhatsApp, time para controlar el tiempo de envío de mensajes y pyautogui para simular pulsaciones de teclas.
+##Importaciones##: Se importan las bibliotecas necesarias. Estas incluyen pandas para la manipulación de datos, pywhatkit para enviar mensajes de WhatsApp, time para controlar el tiempo de envío de mensajes y pyautogui para simular pulsaciones de teclas.
 
 Plantilla del Mensaje: Se define el mensaje a enviar como una cadena de varias líneas. Incluye marcadores de posición como {Tienda} y {rows} que serán reemplazados posteriormente por datos reales.
 
