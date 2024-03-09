@@ -17,7 +17,7 @@ estoy atento a cualquier incoveniente
 
 row = """{Tracking}         
 """
-# Assuming the country code for your numbers is '+1' (change it according to your needs)
+# Assuming the country code for your numbers is '+51' (change it according to your needs)
 country_code = '+51'
 
 data_df = pd.read_excel(r'~\Downloads\Lista_cliente_whastapp.xlsx', dtype={"Celular": str})
