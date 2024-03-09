@@ -5,13 +5,14 @@ Su capacidad para leer datos de un archivo de Excel y formatear mensajes de mane
 Además, la inclusión de un retraso entre los mensajes garantiza un envío suave y sin problemas. 
 ¡Es una solución eficiente y práctica para comunicarse con varios contactos de manera efectiva!
 
-##Importaciones##: Se importan las bibliotecas necesarias. Estas incluyen pandas para la manipulación de datos, pywhatkit para enviar mensajes de WhatsApp, time para controlar el tiempo de envío de mensajes y pyautogui para simular pulsaciones de teclas.
+### *Importaciones*: 
+Se importan las bibliotecas necesarias. Estas incluyen pandas para la manipulación de datos, pywhatkit para enviar mensajes de WhatsApp, time para controlar el tiempo de envío de mensajes y pyautogui para simular pulsaciones de teclas.
 
-Plantilla del Mensaje: Se define el mensaje a enviar como una cadena de varias líneas. Incluye marcadores de posición como {Tienda} y {rows} que serán reemplazados posteriormente por datos reales.
+Plantilla del Mensaje: Se define el mensaje a enviar como una cadena de varias líneas. Incluye marcadores de posición como {Clientes} y {rows} que serán reemplazados posteriormente por datos reales.
 
 Plantilla de Fila: Se define una plantilla para cada fila de datos. Esto se utilizará para dar formato a la información de seguimiento para cada vendedor.
 
-Lectura de Datos: El script lee datos de un archivo de Excel utilizando pd.read_excel(). Supone que el archivo contiene columnas como "ID", "Tienda", "Tracking", "RLO" y "Celular" (número de teléfono).
+Lectura de Datos: El script lee datos de un archivo de Excel utilizando pd.read_excel(). Supone que el archivo contiene columnas como "ID", "Cliente", "Tracking" y "Celular" (número de teléfono).
 
 Envío de Mensajes: Para cada vendedor único en los datos, el script itera sobre su información. Formatea el mensaje utilizando las plantillas y lo envía utilizando pywhatkit.sendwhatmsg_instantly(). Se agrega un retraso de 12 segundos entre cada mensaje para evitar problemas.
 
